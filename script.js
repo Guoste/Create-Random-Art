@@ -1,9 +1,18 @@
 "use strict";
-let canvasCircles = document.getElementById("circles");
-let cntxCircles = canvasCircles.getContext("2d");
-let circlesNumber = Math.floor(Math.random()*300);
 
-cntxCircles.clearRect(0, 0, 600, 600);
+//Random Circles
+const canvasCircles = document.getElementById("circles");
+const cntxCircles = canvasCircles.getContext("2d");
+let circlesNumber = Math.floor(Math.random()*100);
+const circleBtn = document.querySelector(".refresh-circles");
+const circlesInitialsInput = document.querySelector(".circles-initials");
+
+createRandomCircles();
+circleBtn.addEventListener("click", function() {
+    createRandomCircles()
+});
+function createRandomCircles(){
+    cntxCircles.clearRect(0, 0, 600, 600);
 for(let i = 0; i <circlesNumber; i++) {
     let x = Math.floor(Math.random()*500);
     let y = Math.floor(Math.random()*500);
@@ -18,58 +27,96 @@ for(let i = 0; i <circlesNumber; i++) {
     cntxCircles.fillStyle = `rgba(${red}, ${green}, ${blue}, ${a})`;
     cntxCircles.fill();
     cntxCircles.closePath();
-    cntxCircles.stroke();
-}
-
-let canvasSquares = document.getElementById("squares");
-let cntxSquares = canvasSquares.getContext("2d");
-let squaresNumber = Math.floor(Math.random()*300);
-
-cntxSquares.clearRect(0, 0, 600, 600);
-for(let i = 0; i <squaresNumber; i++) {
-    let x = Math.floor(Math.random()*500);
-    let y = Math.floor(Math.random()*500);
-    let width = Math.floor(Math.random()*300);
-    let height = Math.floor(Math.random()*300);
-    let red = Math.floor(Math.random()*256)
-    let green = Math.floor(Math.random()*256)
-    let blue = Math.floor(Math.random()*256)
-    let a = Math.random().toFixed(2);
-
-    cntxSquares.fillRect(x,y,width,height);
-    cntxSquares.fillStyle = `rgba(${red}, ${green}, ${blue}, ${a})`;
-    cntxSquares.fill();    
-}
-
-let canvasTriangles = document.getElementById("triangles");
-let cntxTriangles = canvasTriangles.getContext("2d");
-let TrianglesNumber = Math.floor(Math.random()*300);
-
-cntxTriangles.clearRect(0, 0, 600, 600);
-for(let i = 0; i <TrianglesNumber; i++) {
-    let x = Math.floor(Math.random()*600);
-    let y = Math.floor(Math.random()*600);
-    let w = Math.floor(Math.random()*600);
-    let z = Math.floor(Math.random()*600);
-    let v = Math.floor(Math.random()*600);
-    let i = Math.floor(Math.random()*600);
-    let red = Math.floor(Math.random()*256)
-    let green = Math.floor(Math.random()*256)
-    let blue = Math.floor(Math.random()*256)
-    let a = Math.random().toFixed(2);
-
-    cntxTriangles.beginPath();
-    cntxTriangles.moveTo(x, y);
-    cntxTriangles.lineTo(w, z);
-    cntxTriangles.lineTo(v, i);
-    cntxTriangles.closePath();
     
-    cntxTriangles.fillStyle = `rgba(${red}, ${green}, ${blue}, ${a})`;
-    cntxTriangles.fill();
-    cntxTriangles.stroke();
+    let text = circlesInitialsInput.value;
+    cntxCircles.font = "30px 'Nothing You Could Do'";
+    cntxCircles.textAlign = "right";
+    cntxCircles.fillText(text, canvasCircles.width - 20, canvasCircles.height -20);
+}
 }
 
+//Random Squares
+const canvasSquares = document.getElementById("squares");
+const cntxSquares = canvasSquares.getContext("2d");
+let squaresNumber = Math.floor(Math.random()*100);
+const squaresBtn = document.querySelector(".refresh-squares");
+const squaresInitialsInput = document.querySelector(".squares-initials");
 
+createRandomSquares();
+squaresBtn.addEventListener("click", function() {
+    createRandomSquares()
+});
+        function createRandomSquares() {
+            cntxSquares.clearRect(0, 0, 600, 600);
+            for(let i = 0; i <squaresNumber; i++) {
+                let x = Math.floor(Math.random()*500);
+                let y = Math.floor(Math.random()*500);
+                let width = Math.floor(Math.random()*300);
+                let height = Math.floor(Math.random()*300);
+                let red = Math.floor(Math.random()*256)
+                let green = Math.floor(Math.random()*256)
+                let blue = Math.floor(Math.random()*256)
+                let a = Math.random().toFixed(2);
+            
+                cntxSquares.fillRect(x,y,width,height);
+                cntxSquares.fillStyle = `rgba(${red}, ${green}, ${blue}, ${a})`;
+                cntxSquares.fill();
+                
+                let text = squaresInitialsInput.value;
+                cntxSquares.font = "30px 'Nothing You Could Do'";
+                cntxSquares.textAlign = "right";
+                cntxSquares.fillText(text, canvasSquares.width - 20, canvasSquares.height -20);
+            }
+        }
+//Random Triangles
+const canvasTriangles = document.getElementById("triangles");
+const cntxTriangles = canvasTriangles.getContext("2d");
+let TrianglesNumber = Math.floor(Math.random()*100);
+const trianglesBtn = document.querySelector(".refresh-triangles");
+const trianglesInitialsInput = document.querySelector(".triangles-initials");
+
+createRandomTriangles();
+trianglesBtn.addEventListener("click", function() {
+    createRandomTriangles();
+});
+        function createRandomTriangles() {
+            cntxTriangles.clearRect(0, 0, 600, 600);
+            for(let i = 0; i <TrianglesNumber; i++) {
+                let x = Math.floor(Math.random()*600);
+                let y = Math.floor(Math.random()*600);
+                let w = Math.floor(Math.random()*600);
+                let z = Math.floor(Math.random()*600);
+                let v = Math.floor(Math.random()*600);
+                let i = Math.floor(Math.random()*600);
+                let red = Math.floor(Math.random()*256)
+                let green = Math.floor(Math.random()*256)
+                let blue = Math.floor(Math.random()*256)
+                let a = Math.random().toFixed(2);
+            
+                cntxTriangles.beginPath();
+                cntxTriangles.moveTo(x, y);
+                cntxTriangles.lineTo(w, z);
+                cntxTriangles.lineTo(v, i);
+                cntxTriangles.closePath();
+                
+                cntxTriangles.fillStyle = `rgba(${red}, ${green}, ${blue}, ${a})`;
+                cntxTriangles.fill();
+                cntxTriangles.stroke();
+                cntxTriangles.strokeStyle = "#FFF";
+                
+                let text = trianglesInitialsInput.value;
+                cntxTriangles.font = "30px 'Nothing You Could Do'";
+                cntxTriangles.textAlign = "right";
+                cntxTriangles.fillText(text, canvasTriangles.width - 20, canvasTriangles.height -20);
+            }
+        }
+
+const downloadBtn = document.querySelector(".download-btn");
+
+downloadBtn.addEventListener('click', function (e) {
+    var dataURL = canvas.toDataURL('image/png');
+    button.href = dataURL;
+});
 
 
 

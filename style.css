@@ -1,3 +1,57 @@
-#main-square {
+body {
+    background-color: rgb(200, 231, 229);
+    font-family: 'Exo 2', sans-serif;
+    color :#fff;
+    font-size: 18px;
+    background-color: #3aafa9;
+    
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Exo 2', sans-serif;
+    margin: 30px;
+    font-weight:800;
+    color: #fff;
+}
 
+canvas {
+    background-color: #fff;
+    border: 20px solid #fff;
+    margin: 40px 20px 40px 40px;
+}
+.text-top {
+    margin: 20px 0 50px 40px;
+}
+.navbar-elements {
+    list-style-type: none;
+    overflow: hidden;
+}
+.navbar-elements li {
+    float: right;
+}
+.navbar-elements li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar-elements li a:hover {
+    background-color: #30948c;
+}
+.form-control {
+    width: 200px;
+    height: 50px;
+    margin: 40px 20px;
+}
+.all-canvas .btn-outline-light {
+    height: 50px;
+    margin: 40px 20px;
+    padding: 6px 25px;
+}
+.all-canvas a{
+    display: block;
+}
+.all-canvas button:hover {
+    color: #3aafa9;
 }
