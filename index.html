@@ -6,39 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400|Nothing+You+Could+Do" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Random</title>
 </head>
 <body>
     <div class="container-fluid">
-        <h1>Everybody is an Artist, but <br> only the Artist Knows It</h1>
-        <div class="text-top">Create your own unique Random Art</div>
-        
-        <div class="all-canvas">
-            <div class="row">
-                <canvas id="circles" width="600" height="600"> Your browser does not support Canvas.</canvas> 
-                <div>
-                    <input class = "circles-initials form-control" type="text" placeholder="Enter your initials">
-                    <button class="btn btn-outline-light refresh-circles">Make Art</button>
-                    <a href="#" class="btn btn-outline-light download-btn">Download</a>
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>Everybody is an Artist, but <br> only the Artist Knows It</h1>
+                <div class="text-top">Create your own unique Random Art</div>
+                
+                <div class="all-canvas">
+                    <div class="row">
+                        <canvas id="circles" width="600" height="600"> Your browser does not support Canvas.</canvas> 
+                        <div>
+                            <input class = "circles-initials form-control" type="text" placeholder="Enter your initials">
+                            <button class="btn btn-outline-light refresh-circles">Make Art</button>
+                            <a href="#" class="btn btn-outline-light download-btn">Download</a>
+                            <a href="#" class="btn btn-outline-light download-btn">Share <i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <canvas id="squares" width="600" height="600"> Your browser does not support Canvas.</canvas>
+                        <div>
+                            <input class = "squares-initials form-control" type="text" placeholder="Enter your initials">
+                            <button class="btn btn-outline-light refresh-squares">Make Art</button>
+                            <a href="#" class="btn btn-outline-light download-btn">Download</a>
+                            <a href="#" class="btn btn-outline-light download-btn">Share <i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <canvas id="triangles" width="600" height="600"> Your browser does not support Canvas.</canvas>
+                        <div>
+                            <input class = "triangles-initials form-control" type="text" placeholder="Enter your initials">
+                            <button class="btn btn-outline-light refresh-triangles">Make Art</button>
+                            <a href="#" class="btn btn-outline-light download-btn">Download</a>
+                            <a href="#" class="btn btn-outline-light download-btn">Share <i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <canvas id="squares" width="600" height="600"> Your browser does not support Canvas.</canvas>
-                <div class="row">
-                    <input class = "squares-initials form-control" type="text" placeholder="Enter your initials">
-                    <button class="btn btn-outline-light refresh-squares">Create</button>
-                </div>
+            <div class="col-sm-5 right-text">
+                    <h2>About RANDOM ART</h2>
+                    <p>
+                        This Random Art is inspired by “Dada” - art movement of the early 20th century. One of the key ideas of “Dada” was that talent, training and academic means should be eliminated from the process of making art. The Dadaists creed was <em>“Chance must be recognized as a new stimulus to artistic creation.”</em>
+
+                    </p>
+                    <p>
+                        Here you can make your own image with random number of shapes with random color, random size, random position and random transparency.
+                    </p>                    
+                    <p>
+                        Go ahead, randomize your art!
+                    </p>
+                    
             </div>
-            <div class="row">
-                <canvas id="triangles" width="600" height="600"> Your browser does not support Canvas.</canvas>
-                <div class="row">
-                    <input class = "triangles-initials form-control" type="text" placeholder="Enter your initials">
-                    <button class="btn btn-outline-light refresh-triangles">Create</button>
-                </div>
-            </div>
-        </div>
+
     </div>
+    </div>
+    
 
     
     <script src="script.js"></script>

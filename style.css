@@ -22,36 +22,40 @@ canvas {
 .text-top {
     margin: 20px 0 50px 40px;
 }
-.navbar-elements {
-    list-style-type: none;
-    overflow: hidden;
-}
-.navbar-elements li {
-    float: right;
-}
-.navbar-elements li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.navbar-elements li a:hover {
-    background-color: #30948c;
-}
 .form-control {
     width: 200px;
     height: 50px;
-    margin: 40px 20px;
+    display: block;
+    margin: 40px 0 10px 20px;
 }
-.all-canvas .btn-outline-light {
+
+.all-canvas button {
     height: 50px;
-    margin: 40px 20px;
+    width: 200px;
+    margin: 10px 20px;
     padding: 6px 25px;
 }
-.all-canvas a{
+.all-canvas a {
     display: block;
+    height: 50px;
+    width: 200px;
+    margin: 10px 20px;
+    padding: 12px 25px;
 }
 .all-canvas button:hover {
     color: #3aafa9;
+}
+.right-text {
+    margin: 320px 0;
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100px;
+}
+.right-text h2 {
+    margin-bottom: 20px;
 }
