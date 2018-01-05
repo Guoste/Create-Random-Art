@@ -3,7 +3,6 @@
 //Random Circles
 const canvasCircles = document.getElementById("circles");
 const cntxCircles = canvasCircles.getContext("2d");
-let circlesNumber = Math.floor(Math.random()*100);
 const circleBtn = document.querySelector(".refresh-circles");
 const circlesInitialsInput = document.querySelector(".circles-initials");
 
@@ -12,6 +11,7 @@ circleBtn.addEventListener("click", function() {
     createRandomCircles()
 });
 function createRandomCircles(){
+    let circlesNumber = Math.floor(Math.random()*100);
     cntxCircles.clearRect(0, 0, 600, 600);
 for(let i = 0; i <circlesNumber; i++) {
     let x = Math.floor(Math.random()*500);
@@ -38,7 +38,6 @@ for(let i = 0; i <circlesNumber; i++) {
 //Random Squares
 const canvasSquares = document.getElementById("squares");
 const cntxSquares = canvasSquares.getContext("2d");
-let squaresNumber = Math.floor(Math.random()*100);
 const squaresBtn = document.querySelector(".refresh-squares");
 const squaresInitialsInput = document.querySelector(".squares-initials");
 
@@ -46,7 +45,8 @@ createRandomSquares();
 squaresBtn.addEventListener("click", function() {
     createRandomSquares()
 });
-        function createRandomSquares() {
+function createRandomSquares() {
+    let squaresNumber = Math.floor(Math.random()*100);
             cntxSquares.clearRect(0, 0, 600, 600);
             for(let i = 0; i <squaresNumber; i++) {
                 let x = Math.floor(Math.random()*500);
@@ -71,7 +71,6 @@ squaresBtn.addEventListener("click", function() {
 //Random Triangles
 const canvasTriangles = document.getElementById("triangles");
 const cntxTriangles = canvasTriangles.getContext("2d");
-let TrianglesNumber = Math.floor(Math.random()*100);
 const trianglesBtn = document.querySelector(".refresh-triangles");
 const trianglesInitialsInput = document.querySelector(".triangles-initials");
 
@@ -79,7 +78,8 @@ createRandomTriangles();
 trianglesBtn.addEventListener("click", function() {
     createRandomTriangles();
 });
-        function createRandomTriangles() {
+function createRandomTriangles() {
+    let TrianglesNumber = Math.floor(Math.random()*100);
             cntxTriangles.clearRect(0, 0, 600, 600);
             for(let i = 0; i <TrianglesNumber; i++) {
                 let x = Math.floor(Math.random()*600);
