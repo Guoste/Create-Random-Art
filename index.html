@@ -1,81 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400|Nothing+You+Could+Do" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Random</title>
 </head>
+
 <body>
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-7">
-                <h1>Everybody is an Artist, but <br> only the Artist Knows It</h1>
+            <div class="col-lg">
+                <h1>Everybody is an Artist, but only the Artist Knows It</h1>
                 <div class="text-top">Create your own unique Random Art</div>
-                
+
                 <div class="all-canvas">
+
                     <div class="row">
-                        <canvas id="circles" width="600" height="600"> Your browser does not support Canvas.</canvas> 
-                        <div>
-                            <input class = "circles-initials form-control" type="text" placeholder="Enter your initials">
-                            <button class="btn btn-outline-light refresh-circles">Make Art</button>
-                            <a href="#" class="btn btn-outline-light download-btn">Download</a>
-                            <a href="#" class="btn btn-outline-light download-btn">Share <i class="fab fa-facebook-f"></i></a>
-                        </div>
+                        <input class="initials circles-initials" type="text" placeholder="Enter your initials">
+                        <button class="btn btn-outline-light refresh-circles">Make Art</button>
+                        <a href="#" download="canvas-image.png" class="btn btn-outline-light download-circles-btn">Download
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light">Share
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
+                    <canvas id="circles" width="580" height="580"> Your browser does not support Canvas.</canvas>
+
+
                     <div class="row">
-                        <canvas id="squares" width="600" height="600"> Your browser does not support Canvas.</canvas>
-                        <div>
-                            <input class = "squares-initials form-control" type="text" placeholder="Enter your initials">
-                            <button class="btn btn-outline-light refresh-squares">Make Art</button>
-                            <a href="#" class="btn btn-outline-light download-btn">Download</a>
-                            <a href="#" class="btn btn-outline-light download-btn">Share <i class="fab fa-facebook-f"></i></a>
-                        </div>
+                        <input class="squares-initials initials" type="text" placeholder="Enter your initials">
+                        <button class="btn btn-outline-light refresh-squares">Make Art</button>
+                        <a href="#" download="canvas-image.png" class="btn btn-outline-light download-squares-btn">Download
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light download-btn">Share
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
+                    <canvas id="squares" width="580" height="580"> Your browser does not support Canvas.</canvas>
+
                     <div class="row">
-                        <canvas id="triangles" width="600" height="600"> Your browser does not support Canvas.</canvas>
-                        <div>
-                            <input class = "triangles-initials form-control" type="text" placeholder="Enter your initials">
-                            <button class="btn btn-outline-light refresh-triangles">Make Art</button>
-                            <a href="#" class="btn btn-outline-light download-btn">Download</a>
-                            <a href="#" class="btn btn-outline-light download-btn">Share <i class="fab fa-facebook-f"></i></a>
-                        </div>
+                        <input class="triangles-initials initials" type="text" placeholder="Enter your initials">
+                        <button class="btn btn-outline-light refresh-triangles">Make Art</button>
+                        <a href="#" download="canvas-image.png" class="btn btn-outline-light download-triangles-btn">Download
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light download-btn">Share
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </div>
+                    <canvas id="triangles" width="580" height="580"> Your browser does not support Canvas.</canvas>
+
+                    <div class="row">
+                        <input class="lines-initials initials" type="text" placeholder="Enter your initials">
+                        <button class="btn btn-outline-light refresh-lines">Make Art</button>
+                        <a href="#" download="canvas-image.png" class="btn btn-outline-light download-lines-btn">Download
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light download-btn">Share
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <canvas id="lines" width="580" height="580"> Your browser does not support Canvas.</canvas>
                 </div>
             </div>
-            <div class="col-sm-5 right-text">
-                    <h2>About RANDOM ART</h2>
-                    <p>
-                        This website is inspired by “Dada” - art movement of the early 20th century. One of the key ideas of “Dada” was that talent, training and academic means should be eliminated from the process of making art. Many "Dada" art works were created by  exploring randomness of chance. The Dadaists creed was <em>“Chance must be recognized as a new stimulus to artistic creation.”</em>
+            <div class="col-lg right-text">
+                <h2>About RANDOM ART</h2>
+                <p>
+                    This website is inspired by “Dada” - art movement of the early 20th century. One of the key ideas of “Dada” was that talent,
+                    training and academic means should be eliminated from the process of making art. Many "Dada" art works
+                    were created by exploring randomness of chance. The Dadaists creed was
+                    <em>“Chance must be recognized as a new stimulus to artistic creation.”</em>
 
-                    </p>
-                    <p>
-                        Here you can make your own image with random number of shapes with random color, random size, random position and random transparency.
-                    </p>                    
-                    <p>
-                        Go ahead, be an Artist!
-                    </p>
-                    
+                </p>
+                <p>
+                    Here you can make your own image with random number of shapes with random color, random size, random position and random
+                    transparency.
+                </p>
+                <p>
+                    Go ahead, be an Artist!
+                </p>
+
             </div>
 
+        </div>
+        <div class="fb-comments" data-href="index.html" data-width="800" data-numposts="5"></div>
     </div>
-    <div class="fb-comments" data-href="index.html" data-width="800" data-numposts="5"></div>
-    </div>
-    
 
-    
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
