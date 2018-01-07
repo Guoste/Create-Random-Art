@@ -39,16 +39,16 @@ canvas {
     display: block;
     height: 50px;
     width: 200px;
-    margin: 10px 20px;
+    margin: 10px 20px 20px;
     padding: 12px 25px;
 }
 .all-canvas button:hover {
     color: #3aafa9;
 }
 .right-text {
-    margin: 320px 0;
+    margin: 320px 0 40px 0;
     max-width: 500px;
-    max-height: 500px;
+    max-height: 640px;
     border: 1px solid #fff;
     padding: 20px;
     border-radius: 8px;
@@ -57,5 +57,8 @@ canvas {
     top: 100px;
 }
 .right-text h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+.right-text p {
+    margin-bottom: 40px;
 }

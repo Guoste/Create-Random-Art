@@ -114,8 +114,10 @@ function createRandomTriangles() {
 const downloadBtn = document.querySelector(".download-btn");
 
 downloadBtn.addEventListener('click', function (e) {
-    var dataURL = canvas.toDataURL('image/png');
-    button.href = dataURL;
+   let image = canvasCircles.toDataURL("image/png");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+    
+    image.saveAsPNG(canvasCircles);
+   
 });
 
 
