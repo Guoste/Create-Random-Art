@@ -15,6 +15,9 @@ h1 {
 .text-top {
     margin: 20px 0 80px 45px;
 }
+.all-btn {
+    min-width:500px;
+}
 .initials {
     padding-left: 8px;
     max-width: 150px;
@@ -107,10 +110,8 @@ footer .anchor:hover {
         padding-left:10px;
         padding-right: 10px;
     }
-.all-btn {
-    min-width:600px;
 }
-}
+
 @media screen and (max-width: 501px) {
     .right-text {
         height: 700px;
