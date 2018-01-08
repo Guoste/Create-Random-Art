@@ -5,11 +5,6 @@ const canvasCircles = document.getElementById("circles");
 const cntxCircles = canvasCircles.getContext("2d");
 const circleBtn = document.querySelector(".refresh-circles");
 const circlesInitialsInput = document.querySelector(".circles-initials");
-let imgCircles = canvasCircles.toDataURL("image/jpeg");
-let downloadCircles = document.querySelector(".download-circles-btn");
-let downloadSquares = document.querySelector(".download-squares-btn");
-let downloadTriangles = document.querySelector(".download-triangles-btn");
-let downloadLines = document.querySelector(".download-lines-btn");
 
 createRandomCircles();
 circleBtn.addEventListener("click", function () {
@@ -160,6 +155,11 @@ function createRandomLines() {
 
 // Download
 
+let downloadCircles = document.querySelector(".download-circles-btn");
+let downloadSquares = document.querySelector(".download-squares-btn");
+let downloadTriangles = document.querySelector(".download-triangles-btn");
+let downloadLines = document.querySelector(".download-lines-btn");
+
 function canvasToImage(canvas) {
     let w = canvas.width;
     let h = canvas.height;
@@ -196,6 +196,8 @@ downloadLines.addEventListener("click", function(){
     let data = canvasToImage(canvasLines);
     downloadLines.href = data;
     }, false );
+
+
 
 
 

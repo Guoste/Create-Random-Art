@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400|Nothing+You+Could+Do" rel="stylesheet">
@@ -14,13 +15,22 @@
 </head>
 
 <body>
+    <img class="hidden" src="img/canvas-image.png">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     
     <header>
         <h1>Everybody is an Artist, but only the Artist Knows It</h1>
         <div class="text-top">Create your own unique Random Art</div>
     </header>           
     <div class= "container-fluid">
-        <div class="row">
+        <div class="row all-btn">
             <div class = "all-canvas col-lg">
                 <div class="row buttons-row">
                     <input class="initials circles-initials form-control" type="text" placeholder="Enter your initials">
@@ -28,11 +38,8 @@
                     <a href="#" download="canvas-image.png" class="btn btn-outline-light download download-circles-btn">Download
                      <i class="fa fa-download" aria-hidden="true"></i>
                     </a>
-                    <a href="#" class="btn btn-outline-light share">Share
-                         <i class="fab fa-facebook-f"></i>
-                    </a>
                 </div>
-                <canvas id="circles" width="580" height="580"> Your browser does not support Canvas.</canvas>
+                <canvas id="circles" width="580" height="580"> We apologize, your browser does not support canvas at this time!</canvas>
 
                 <div class="row">
                         <input class="squares-initials initials form-control" type="text" placeholder="Enter your initials">
@@ -40,11 +47,8 @@
                         <a href="#" download="canvas-image.png" class="btn btn-outline-light download-squares-btn download">Download
                             <i class="fa fa-download" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="btn btn-outline-light download-btn share">Share
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
                     </div>
-                    <canvas id="squares" width="580" height="580"> Your browser does not support Canvas.</canvas>
+                    <canvas id="squares" width="580" height="580"> We apologize, your browser does not support canvas at this time!</canvas>
             
                     <div class="row">
                         <input class="triangles-initials initials form-control" type="text" placeholder="Enter your initials">
@@ -52,11 +56,8 @@
                         <a href="#" download="canvas-image.png" class="btn btn-outline-light download-triangles-btn download">Download
                             <i class="fa fa-download" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="btn btn-outline-light download-btn share">Share
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
                     </div>
-                    <canvas id="triangles" width="580" height="580"> Your browser does not support Canvas.</canvas>
+                    <canvas id="triangles" width="580" height="580"> We apologize, your browser does not support canvas at this time!</canvas>
             
                     <div class="row">
                         <input class="lines-initials initials form-control" type="text" placeholder="Enter your initials">
@@ -64,11 +65,8 @@
                         <a href="#" download="canvas-image.png" class="btn btn-outline-light download-lines-btn download">Download
                             <i class="fa fa-download" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="btn btn-outline-light download-btn share">Share
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
                     </div>
-                    <canvas id="lines" width="580" height="580"> Your browser does not support Canvas.</canvas>
+                    <canvas id="lines" width="580" height="580"> We apologize, your browser does not support canvas at this time!</canvas>
 
             </div>
             <div class = "col-lg">
@@ -92,38 +90,16 @@
         </div> 
     </div>    
         
-            
+<footer>
+    <hr>
+     <div class= "row justify-content-around">
+         <div class="fb-share-button" data-href="http://createrandomart.com/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcreaterandomart.com%2F&amp;src=sdkpreparse">Share</a></div>
+         <div class="email">create@randomart.com</div>
+         <div>Made by <a class="anchor" href="#">GUOSTE</a> © 2018</div>
+         
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        </div>
-    </div>
-
-
-    <div class="col">
-        <div class="row btn-row">
-            
-        </div>
-        
-
-
-        
-
-    </div>
-
-
-
-
-
+     </div>   
+</footer>
     <script src="script.js"></script>
 </body>
 
