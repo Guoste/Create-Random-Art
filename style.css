@@ -103,12 +103,21 @@ footer .anchor:hover {
 @media screen and (max-width: 640px) {
     .initials {
         font-size: 15px;
+        margin-left: 15px;
+        margin-top: 5px;
+        height: 55px;
     }
     
     .all-canvas button, .all-canvas a {
         font-size: 15px;
-        padding-left:10px;
-        padding-right: 10px;
+        padding-left:15px;
+        padding-right: 15px;
+        margin-left: 15px;
+        margin-top: 5px;
+        height: 55px;
+    }
+    canvas {
+        margin-left: 0;
     }
 }
 
@@ -118,6 +127,7 @@ footer .anchor:hover {
         min-width: 320px;
         font-size: 18px;
     }
+
 }
 .hidden {
     display:none;
